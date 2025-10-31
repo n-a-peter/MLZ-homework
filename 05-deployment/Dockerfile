@@ -4,7 +4,7 @@ FROM agrigorev/zoomcamp-model:2025
 RUN pip install uv
 # COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
-WORKDIR /app
+WORKDIR /code
 
 # ENV PATH="/code/.venv/bin:$PATH"
 

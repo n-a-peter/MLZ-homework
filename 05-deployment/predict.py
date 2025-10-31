@@ -6,7 +6,7 @@ import uvicorn
 app = FastAPI(title="lead-conversion")
 
 # load the pipeline with pickle
-with open("pipeline_v1.bin", "rb") as f_in:
+with open("pipeline_v2.bin", "rb") as f_in:
     pipeline = pickle.load(f_in)
 
 @app.post("/predict")
