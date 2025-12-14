@@ -7,7 +7,7 @@ from PIL import Image
 from keras_image_helper import create_preprocessor
 
 
-onnx_model_path = os.getenv("MODEL_NAME","hair_classifier_v1.onnx")
+onnx_model_path = os.getenv("MODEL_NAME","hair_classifier_empty.onnx")
 session = ort.InferenceSession(onnx_model_path, providers=["CPUExecutionProvider"]) #providers=["CPUExecutionProvider"]
 
 inputs = session.get_inputs()
